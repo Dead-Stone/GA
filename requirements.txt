@@ -1,0 +1,23 @@
+streamlit
+openai
+weaviate-client
+tqdm
+python-dotenv
+anthropic
+pdfminer.six
+pi_heif
+unstructured_inference
+unstructured-pytesseract
+unstructured
+# onnx
+# onnxruntime
+tesseract
+poppler-utils
+onnxruntime-tools
+streamlit
+google-generativeai
+pdfplumber
+Pillow
+unstructured
+nltk
+python-dotenv
