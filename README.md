@@ -12,6 +12,14 @@ The **Assignment Grading Assistant** automates the grading of student submission
 - **File Upload Support**: Accepts ZIP files containing student submissions, along with question papers and optional answer keys.
 - **Downloadable Results**: Enables users to download grading results in JSON format.
 
+## Prerequisites
+
+1. Install Python 3.8+
+2. Install Tesseract OCR:
+   - Download installer from [UB-Mannheim/tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
+   - Install Tesseract to default location (`C:\Program Files\Tesseract-OCR`)
+   - Or set custom path in environment variable: `TESSERACT_PATH`
+
 ## Installation
 
 ### 1. Clone the Repository
