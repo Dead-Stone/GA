@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#Custom files ignored
+uploads/
+temp_uploads/
 # C extensions
 *.so
 

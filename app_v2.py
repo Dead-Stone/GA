@@ -10,9 +10,12 @@ from preprocessing_v2 import FilePreprocessor
 from utils.logging_utils import setup_logging, StreamlitHandler
 import google.generativeai as genai
 from prompts.image_prompt import get_image_description_prompt
+from dotenv import load_dotenv
+load_dotenv()  # Load environment variables from .env file
 
 # Set Tesseract path
-os.environ["TESSDATA_PREFIX"] = "C:\Program Files\Tesseract-OCR\tessdata"
+os.environ["TESSDATA_PREFIX"] = "C:\\Program Files\\Tesseract-OCR\\tessdata"
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Constants
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -196,8 +199,12 @@ def main():
                 logger.info(f"Processed files: {processed_files['submissions']}")
                 # logger.info(processed_files)
                 
-                # Grade submissions
-                grading_service = GradingService(os.getenv("GEMINI_API_KEY"))
+                api_key = os.getenv("GEMINI_API_KEY")
+                if not api_key:
+                    logger.error("No API_KEY found. Please set the GEMINI_API_KEY environment variable.")
+                    raise ValueError("No API_KEY found. Please set the GEMINI_API_KEY environment variable.")
+                print(api_key,"api_key")
+                grading_service = GradingService(api_key=api_key)
                 logger.info("Grading submissions with rubric: %s", rubric["total_points"])
                 results = grading_service.batch_grade(
                     processed_files["submissions"],
