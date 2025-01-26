@@ -16,8 +16,11 @@ load_dotenv()  # Load environment variables from .env file
 print(f"Python version: {sys.version}")
 
 # Set Tesseract path
-os.environ["TESSDATA_PREFIX"] = "C:\\Program Files\\Tesseract-OCR\\tessdata"
-os.environ["POPPLER_PATH"] = r"C:\\Program Files\\poppler-23.11.0\\Library\\bin"
+# os.environ["TESSDATA_PREFIX"] = "C:\\Program Files\\Tesseract-OCR\\tessdata"
+# os.environ["POPPLER_PATH"] = r"C:\\Program Files\\poppler-23.11.0\\Library\\bin"
+
+os.environ["TESSDATA_PREFIX"] = "/usr/share/tesseract-ocr/4.00/tessdata"
+os.environ["POPPLER_PATH"] = "/usr/bin"
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Constants
