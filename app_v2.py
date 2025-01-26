@@ -1,3 +1,4 @@
+import sys
 import streamlit as st
 import os
 import json
@@ -12,6 +13,7 @@ import google.generativeai as genai
 from prompts.image_prompt import get_image_description_prompt
 from dotenv import load_dotenv
 load_dotenv()  # Load environment variables from .env file
+print(f"Python version: {sys.version}")
 
 # Set Tesseract path
 os.environ["TESSDATA_PREFIX"] = "C:\\Program Files\\Tesseract-OCR\\tessdata"
