@@ -32,3 +32,4 @@ unstructured-pytesseract
 pdf2image
 python-dotenv
 opencv-python
+opencv-python-headless
