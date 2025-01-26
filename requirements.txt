@@ -33,3 +33,7 @@ pdf2image
 python-dotenv
 opencv-python
 opencv-python-headless
+tesseract-ocr
+tesseract
+poppler-utils
+ 
