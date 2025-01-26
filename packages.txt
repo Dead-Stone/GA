@@ -1,2 +1,4 @@
 tesseract-ocr
+libtesseract-dev
+libleptonica-dev
 poppler-utils
