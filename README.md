@@ -16,8 +16,8 @@ The **Assignment Grading Assistant** automates the grading of student submission
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/assignment-grading-assistant.git
-cd assignment-grading-assistant
+git clone https://github.com/Dead-Stone/GA.git
+cd GA
 ```
 
 ### 2. Create a Virtual Environment
@@ -86,4 +86,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## Contact
 
-For questions or issues, open an issue on the GitHub repository or contact the project maintainer at `your.email@example.com`.
+For questions or issues, open an issue on the GitHub repository or contact the project maintainer at `mohanasatyanarayana.moganti@sjsu.edu`.
