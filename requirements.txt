@@ -31,3 +31,4 @@ unstructured_inference
 unstructured-pytesseract
 pdf2image
 python-dotenv
+opencv-python

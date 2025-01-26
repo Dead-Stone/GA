@@ -1,5 +1,5 @@
 {
-  "total_points": 25,
+  "total_points": 24,
   "sections": [
     {
       "max_points": 2,
@@ -8,12 +8,12 @@
         {
           "name": "Correct Prefix Length",
           "points": 1,
-          "description": "Correctly calculates the prefix length required to create 100 subnets. (Full point), Attempts to calculate but makes minor errors in logic or computation. (Half point), No meaningful attempt or completely incorrect approach. (Zero points)"
+          "description": "Correctly calculates the prefix length required to create 100 subnets. (Full point: Correct; Half point: Minor errors; Zero points: No meaningful attempt or completely incorrect approach.)"
         },
         {
           "name": "First and Last Address Representation",
           "points": 1,
-          "description": "Correctly identifies the first and last address of the first subnet. (Full point), Partially correct answers with minor errors. (Half point), No valid representation provided. (Zero points)"
+          "description": "Correctly identifies the first and last address of the first subnet. (Full point: Correct; Half point: Partially correct with minor errors; Zero points: No valid representation provided.)"
         }
       ]
     },
@@ -24,12 +24,12 @@
         {
           "name": "Address Compression",
           "points": 0.5,
-          "description": "Fully compressed IPv6 address following proper rules. (Full points), Partially compressed with minor errors. (Half point)"
+          "description": "Fully compressed IPv6 address following proper rules. (Full points: Fully compressed; Half point: Partially compressed with minor errors.)"
         },
         {
           "name": "Explanation of Rules",
           "points": 0.5,
-          "description": "Clearly explains steps and rules (e.g., zero compression, removal of leading zeros). (Full points), Explanation is vague or partially correct. (Half point)"
+          "description": "Clearly explains steps and rules (e.g., zero compression, removal of leading zeros). (Full points: Clear explanation; Half point: Vague or partially correct.)"
         }
       ]
     },
@@ -40,12 +40,12 @@
         {
           "name": "IPv4 Addressing Scheme",
           "points": 1,
-          "description": "Proposes an efficient, scalable IPv4 addressing plan. (Full point), Plan is partially optimized but misses key elements. (Half point)"
+          "description": "Proposes an efficient, scalable IPv4 addressing plan. (Full point: Efficient and scalable; Half point: Partially optimized but misses key elements.)"
         },
         {
           "name": "IPv6 Addressing Scheme",
           "points": 1,
-          "description": "Proposes a detailed, efficient IPv6 addressing scheme. (Full point), Partially optimized but lacks scalability or clarity. (Half point)"
+          "description": "Proposes a detailed, efficient IPv6 addressing scheme. (Full point: Detailed and efficient; Half point: Partially optimized but lacks scalability or clarity.)"
         }
       ]
     },
@@ -56,12 +56,12 @@
         {
           "name": "Subnet Mask and Number of Subnets",
           "points": 1,
-          "description": "Correctly calculates subnet mask and number of subnets. (Full point), Minor calculation errors or partially correct answer. (Half point)"
+          "description": "Correctly calculates subnet mask and number of subnets. (Full point: Correct; Half point: Minor calculation errors or partially correct answer.)"
         },
         {
           "name": "Network and Broadcast Addresses",
           "points": 1,
-          "description": "Correctly identifies network and broadcast addresses for the first two subnets. (Full point), Partially correct but with minor errors. (Half point)"
+          "description": "Correctly identifies network and broadcast addresses for the first two subnets. (Full point: Correct; Half point: Partially correct but with minor errors.)"
         }
       ]
     },
@@ -72,12 +72,12 @@
         {
           "name": "Prefix Length for Customer Networks",
           "points": 1,
-          "description": "Correctly determines prefix length for efficient aggregation. (Full point), Partially correct with errors in calculation. (Half point)"
+          "description": "Correctly determines prefix length for efficient aggregation. (Full point: Correct; Half point: Partially correct with errors in calculation.)"
         },
         {
           "name": "Efficient Aggregation Explanation",
           "points": 1,
-          "description": "Provides a clear plan to minimize routing table size. (Full point), Explanation is vague or partially correct. (Half point)"
+          "description": "Provides a clear plan to minimize routing table size. (Full point: Clear plan; Half point: Vague or partially correct.)"
         }
       ]
     },
@@ -88,12 +88,12 @@
         {
           "name": "Explanation of Differences",
           "points": 1,
-          "description": "Detailed and accurate explanation of classful and classless addressing. (Full point), Partial explanation with some inaccuracies. (Half point)"
+          "description": "Detailed and accurate explanation of classful and classless addressing. (Full point: Detailed and accurate; Half point: Partial explanation with some inaccuracies.)"
         },
         {
           "name": "Efficiency of Classless Addressing",
           "points": 1,
-          "description": "Correctly identifies why classless addressing is more efficient. (Full point), Partially correct explanation. (Half point)"
+          "description": "Correctly identifies why classless addressing is more efficient. (Full point: Correct; Half point: Partially correct explanation.)"
         }
       ]
     },
@@ -104,7 +104,7 @@
         {
           "name": "Correct Calculations",
           "points": 1,
-          "description": "Correct calculations for Network address, broadcast address, number of valid hosts, and first/last usable addresses. (0.25 points each)"
+          "description": "Correct calculations for network address, broadcast address, number of valid hosts, and first/last usable addresses. (0.25 points each)"
         }
       ]
     },
@@ -115,12 +115,12 @@
         {
           "name": "Role of Subnet Mask",
           "points": 0.5,
-          "description": "Clearly explains the purpose of the subnet mask. (Full points), Partially correct explanation. (Half point)"
+          "description": "Clearly explains the purpose of the subnet mask. (Full points: Clear explanation; Half point: Partially correct explanation.)"
         },
         {
           "name": "Subnet and Host Calculations",
           "points": 0.5,
-          "description": "Correct calculations for subnets, hosts, and broadcast address. (Full points), Minor calculation errors. (Half point)"
+          "description": "Correct calculations for subnets, hosts, and broadcast address. (Full points: Correct; Half point: Minor calculation errors.)"
         }
       ]
     },
@@ -131,12 +131,12 @@
         {
           "name": "Set 1 Aggregation",
           "points": 1,
-          "description": "Correct supernet for Set 1. (Full point), Minor errors in calculation. (Half point)"
+          "description": "Correct supernet for Set 1. (Full point: Correct; Half point: Minor errors in calculation.)"
         },
         {
           "name": "Set 2 Aggregation",
           "points": 1,
-          "description": "Correct supernet for Set 2. (Full point), Minor errors in calculation. (Half point)"
+          "description": "Correct supernet for Set 2. (Full point: Correct; Half point: Minor errors in calculation.)"
         }
       ]
     },
@@ -147,7 +147,7 @@
         {
           "name": "Explanation of Routing Table Function",
           "points": 1,
-          "description": "Accurate and clear explanation. (Full point), Partial or unclear explanation. (Half point)"
+          "description": "Accurate and clear explanation. (Full point: Accurate and clear; Half point: Partial or unclear explanation.)"
         }
       ]
     },
@@ -158,12 +158,12 @@
         {
           "name": "Key Differences",
           "points": 1,
-          "description": "Detailed and accurate comparison. (Full point), Partially correct or vague explanation. (Half point)"
+          "description": "Detailed and accurate comparison. (Full point: Detailed and accurate; Half point: Partially correct or vague explanation.)"
         },
         {
           "name": "Examples",
           "points": 1,
-          "description": "Provides valid examples of both protocol types. (Full point), Examples are partially correct. (Half point)"
+          "description": "Provides valid examples of both protocol types. (Full point: Valid examples; Half point: Examples are partially correct.)"
         }
       ]
     },
@@ -174,12 +174,12 @@
         {
           "name": "Impact of Delay and Bandwidth",
           "points": 1,
-          "description": "Clearly explains the impact on performance. (Full point), Partial explanation. (Half point)"
+          "description": "Clearly explains the impact on performance. (Full point: Clear explanation; Half point: Partial explanation.)"
         },
         {
           "name": "Key Differences",
           "points": 1,
-          "description": "Highlights differences with examples. (Full point), Explanation lacks clarity or examples. (Half point)"
+          "description": "Highlights differences with examples. (Full point: Clear explanation with examples; Half point: Explanation lacks clarity or examples.)"
         }
       ]
     }
