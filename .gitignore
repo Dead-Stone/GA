@@ -6,6 +6,9 @@ __pycache__/
 #Custom files ignored
 uploads/
 temp_uploads/
+poppler/
+Tesseract-OCR/
+
 # C extensions
 *.so
 

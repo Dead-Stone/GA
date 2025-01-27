@@ -1,4 +1,5 @@
 import sys
+
 import streamlit as st
 import os
 import json
@@ -16,11 +17,24 @@ load_dotenv()  # Load environment variables from .env file
 print(f"Python version: {sys.version}")
 
 # Set Tesseract path
-# os.environ["TESSDATA_PREFIX"] = "C:\\Program Files\\Tesseract-OCR\\tessdata"
-# os.environ["POPPLER_PATH"] = r"C:\\Program Files\\poppler-23.11.0\\Library\\bin"
+# os.environ["TESSDATA_PREFIX"] = "C:\\Users\\mohan\\Downloads\\Personal Project\\Prod\\GA\\Tesseract-OCR\\tessdata"
+# os.environ["POPPLER_PATH"] = "C:\\Users\\mohan\\Downloads\\Personal Project\\Prod\\GA\\poppler\\poppler-24.07.0\\Library\\bin"
 
-os.environ["TESSDATA_PREFIX"] = "/usr/share/tesseract-ocr/4.00/tessdata"
-os.environ["POPPLER_PATH"] = "/usr/bin"
+# os.environ["TESSDATA_PREFIX"] = os.getenv("TESSDATA_PREFIX")
+# os.environ["POPPLER_PATH"] = os.getenv("POPPLER_PATH")
+# Set Tesseract paths with fallbacks
+# Configure Tesseract OCR path
+os.environ["TESSDATA_PREFIX"] = os.getenv("TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata")
+tesseract_path = os.getenv("TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata")
+os.environ["PATH"] = f"{tesseract_path}:{os.environ['PATH']}"
+
+
+poppler_path = os.getenv("POPPLER_PATH", "/app/poppler/poppler-24.07.0/Library/bin")
+os.environ["PATH"] = f"{poppler_path}:{os.environ['PATH']}"
+
+
+# os.environ["TESSDATA_PREFIX"] = "/usr/share/tesseract-ocr/4.00/tessdata"
+# os.environ["POPPLER_PATH"] = "/usr/bin"
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Constants

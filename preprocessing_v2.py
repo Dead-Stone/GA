@@ -13,10 +13,17 @@ import google.generativeai as genai
 from prompts.answer_key_prompt import get_answer_key_prompt
 from prompts.image_prompt import get_image_description_prompt
 
-import nltk
-print(nltk.data.path)
 # Set Tesseract path
-os.environ["TESSDATA_PREFIX"] = "C:\Program Files\Tesseract-OCR\tessdata"
+from dotenv import load_dotenv
+load_dotenv()
+
+# Set Tesseract paths with fallbacks
+# Configure Tesseract OCR path
+os.environ["TESSDATA_PREFIX"] = os.getenv("TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata")
+tesseract_path = os.getenv("TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata")
+os.environ["PATH"] = f"{tesseract_path}:{os.environ['PATH']}"
+
+# os.environ["TESSDATA_PREFIX"] = "C:\Program Files\Tesseract-OCR\tessdata"
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
